@@ -9,7 +9,7 @@ function App() {
 
   return (<div>
       <div className="container">
-        <img src={image} width="500px" alt="person"/>
+        <img src={image} width="300px" alt="person"/>
       </div>
 
       <div className="container">
@@ -21,7 +21,12 @@ function App() {
       </div>
 
       <div className="container">
-        <h2>{age}</h2>
+        <h2>{age} years old</h2>
+      </div>
+
+      <div className="btn container">
+        <button>Previos</button>
+        <button>Next</button>
       </div>
 
     </div>);
