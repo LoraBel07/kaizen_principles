@@ -3,28 +3,28 @@ import { data } from "./data";
 import './App.css';
 
 function App() {
-  const [person, setPerson] = useState(0);
-  const { id, name, description, newdescription, image } = data[person];
-  const [showMore, setShowMore] = useState(false);
+  const [principles, setPrinciple] = useState(0);
+  const { id, name, description, image } = data[principles];
+  
 
-  const previousPerson = () => {
-    setPerson((person => {
-      person--;
-      if (person < 0) {
+  const previousPrinciple = () => {
+    setPrinciple((principle => {
+      principle--;
+      if (principle < 0) {
         return data.length - 1;
       }
-      return person;
+      return principle;
     }))
 
   }
 
-  const nextPerson = () => {
-    setPerson((person =>{
-      person++;
-      if (person > data.length - 1) {
-        person = 0;
+  const nextPrinciple = () => {
+    setPrinciple((principle =>{
+      principle++;
+      if (principle > data.length - 1) {
+        principle = 0;
       }
-      return person;
+      return principle;
     }))
   }
 
@@ -32,6 +32,7 @@ function App() {
       <div className="container">
         <h1>カイゼン</h1>
       </div>
+      
       {/* <div className="container">
         <p>"Try to do something just a little bit better each day in order to make a large impact in the long run."</p>
       </div> */}
@@ -40,25 +41,22 @@ function App() {
       </div>
 
       <div className="container">
-        <img src={image} height="200px" alt="person"/>
+        <img src={image} height="200px" alt="principle"/>
       </div>
 
       <div className="container">
         <h2>{id}. {name}</h2>
       </div>
 
-      {/*  */}
-
       <div className="btn container">
-        <button className="pointers" onClick={previousPerson}><img src="https://img.icons8.com/ios-filled/40/ffffff/hand-left.png" alt="previous" /></button>
-        <button className="pointers" onClick={nextPerson}><img src="https://img.icons8.com/ios-filled/40/ffffff/hand-right.png" alt="next" /></button>
+        <button className="pointers" onClick={previousPrinciple}><img src="https://img.icons8.com/ios-filled/30/ffffff/hand-left.png" alt="previous" /></button>
+        <button className="pointers" onClick={nextPrinciple}><img src="https://img.icons8.com/ios-filled/30/ffffff/hand-right.png" alt="next" /></button>
       </div>
 
-      <div className="container">
-      <p>{showMore ? description : description.substring(0,98) + "..."}
-        <button className="show" onClick={() => setShowMore(!showMore)}>{showMore ? "Show less" : "Show more"}</button>
-        </p>
+      <div className="container description">
+      <p>{ description }</p>
       </div>
+      
 
     </div>);
 }

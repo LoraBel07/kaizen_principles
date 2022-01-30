@@ -15,20 +15,22 @@ p {
   font-size: 20px;
 }
 .description {
-  width: 80%;
+  width: 90%;
+  height: 120px;
+  margin-top: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
   text-align: center;
+  border: darkgreen 1px solid;
 }
 
-.person {
-  margin: 10px;
-}
 
 .btn {
   display: flex;
   justify-content: space-evenly;
 }
 .pointers {
-  height: 8%;
+  height: 5%;
 }
 .show {
   border: none;
