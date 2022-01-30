@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   const [person, setPerson] = useState(0);
   const { id, name, description, newdescription, image } = data[person];
-  // console.log(data[person]);
+  const [showMore, setShowMore] = useState(false);
 
   const previousPerson = () => {
     setPerson((person => {
@@ -47,14 +47,17 @@ function App() {
         <h2>{id}. {name}</h2>
       </div>
 
-      {/* <div className="container">
-        <p>{description}</p>
-      </div> */}
+      {/*  */}
 
       <div className="btn container">
-        <button onClick={previousPerson}><img src="https://img.icons8.com/ios-filled/40/ffffff/hand-left.png" alt="previous" /></button>
-        <p>{description}</p>
-        <button onClick={nextPerson}><img src="https://img.icons8.com/ios-filled/40/ffffff/hand-right.png" alt="next" /></button>
+        <button className="pointers" onClick={previousPerson}><img src="https://img.icons8.com/ios-filled/40/ffffff/hand-left.png" alt="previous" /></button>
+        <button className="pointers" onClick={nextPerson}><img src="https://img.icons8.com/ios-filled/40/ffffff/hand-right.png" alt="next" /></button>
+      </div>
+
+      <div className="container">
+      <p>{showMore ? description : description.substring(0,98) + "..."}
+        <button className="show" onClick={() => setShowMore(!showMore)}>{showMore ? "Show less" : "Show more"}</button>
+        </p>
       </div>
 
     </div>);

@@ -2,19 +2,21 @@ body {
   background-color: #cfe9f5;
 }
 
-.container {
+.container, .containerDesk {
   display: flex;
-  justify-content: center;
-  
-  /* height: 800px; */
-  /* margin-top: 200px; */
+  justify-content: center;  
 }
+
 h1 {
   font-size: 35px;
   color: darkgreen;
 }
 p {
   font-size: 20px;
+}
+.description {
+  width: 80%;
+  text-align: center;
 }
 
 .person {
@@ -24,6 +26,16 @@ p {
 .btn {
   display: flex;
   justify-content: space-evenly;
+}
+.pointers {
+  height: 8%;
+}
+.show {
+  border: none;
+  color: rgb(1, 109, 109);
+  background-color: rgba(240, 255, 255, 0);
+  font-size: large;
+  font-style: italic;
 }
 
 button {

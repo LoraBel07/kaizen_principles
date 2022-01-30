@@ -14,7 +14,7 @@ export const data = [
 	{
 		id: 1,
 		name: "Never Stop",
-		description: "There is an area for improvement in everyone’s life, no matter how successful they are.",
+		description: "There is an area for improvement in everyone’s life, no matter how successful they are. The idea here is to focus on continuous improvements in your life, every day, no matter how small the step you take to be a better you than you were yesterday.",
 		newDescription: "There is an area for improvement in everyone’s life, no matter how successful they are. The idea here is to focus on continuous improvements in your life, every day, no matter how small the step you take to be a better you than you were yesterday.",
 		image: image1
 	},
