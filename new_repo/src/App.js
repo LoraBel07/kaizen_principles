@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { data } from "./data";  
+import { dataTwo } from "./dataTwo";
 import './App.css';
 
 function App() {
