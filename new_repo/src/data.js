@@ -1,42 +1,79 @@
+import image from "./moving.jpg";
+
 export const data = [
 
 	{
 		id: 1,
-		name: "Barry Allen",
-		description: "Me + You +… JK, You Don’t Have to Do Any Math to Send Me a Message!",
-		age: 30,
-		image: "https://images.unsplash.com/photo-1583854608682-94147497bd27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGNvYXR8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+		name: "Never Stop",
+		description: "There is an area for improvement in everyone’s life, no matter how successful they are. The idea here is to focus on continuous improvements in your life, every day, no matter how small the step you take to be a better you than you were yesterday.",
+		newDescription: "There is an area for improvement in everyone’s life, no matter how successful they are. The idea here is to focus on continuous improvements in your life, every day, no matter how small the step you take to be a better you than you were yesterday.",
+		image: image
 	},
 
 	{
 		id: 2,
-		name: "Maria Lopez",
-		description: "Tired of Online Dating? Let’s Be Each Other’s Reason for Signing Off",
-		age: 24,
-		image: "https://images.unsplash.com/photo-1545912193-31ce2f0e9a08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGNvYXR8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+		name: "Be Proactive",
+		description: "Stop hesitating because of possible hurdles that you predict, and move forward toward your goal for continuous improvement. It is important to not take any chance in the way of improvement, and for each person in the organization to take personal responsibility for making improvements. While it is one thing to sit around and discuss about the improvements that should be made, it is different thing to actually make an action plan to implement the changes.",
+		newDescription: "Stop hesitating because of possible hurdles that you predict, and move forward toward your goal for continuous improvement. It is important to not take any chance in the way of improvement, and for each person in the organization to take personal responsibility for making improvements. While it is one thing to sit around and discuss about the improvements that should be made, it is different thing to actually make an action plan to implement the changes.",
+		image: "proactive.jpg"
 	},
 
 	{
 		id: 3,
-		name: "Andrew Smith",
-		description: "Book Worm Looking to Write the Next Chapter",
-		age: 32,
-		image: "https://images.unsplash.com/photo-1611485988300-b7530defb8e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y29hdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+		name: "Never Stop",
+		description: "There is an area for improvement in everyone’s life, no matter how successful they are. The idea here is to focus on continuous improvements in your life, every day, no matter how small the step you take to be a better you than you were yesterday.",
+		newDescription: "There is an area for improvement in everyone’s life, no matter how successful they are. The idea here is to focus on continuous improvements in your life, every day, no matter how small the step you take to be a better you than you were yesterday.",
+		image: "proactive.jpg"	
 	},
 
 	{
 		id: 4,
-		name: "Olivia Lee",
-		description: "Life is Great, But Maybe It Can Be Better With You?",
-		age: 26,
-		image: "https://images.unsplash.com/photo-1574108233389-8ac5db89e3f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTV8fGNvYXR8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+		name: "Never Stop",
+		description: "There is an area for improvement in everyone’s life, no matter how successful they are. The idea here is to focus on continuous improvements in your life, every day, no matter how small the step you take to be a better you than you were yesterday.",
+		newDescription: "There is an area for improvement in everyone’s life, no matter how successful they are. The idea here is to focus on continuous improvements in your life, every day, no matter how small the step you take to be a better you than you were yesterday.",
+		image: "moving.jpg"	
 	},
 
 	{
 		id: 5,
-		name: "Mike Spector",
-		description: "Music Lover Looking to Write the Next Verse",
-		age: 31,
-		image: "https://images.unsplash.com/photo-1608236415053-3691791bbffe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODd8fGNvYXR8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+		name: "Never Stop",
+		description: "There is an area for improvement in everyone’s life, no matter how successful they are. The idea here is to focus on continuous improvements in your life, every day, no matter how small the step you take to be a better you than you were yesterday.",
+		newDescription: "There is an area for improvement in everyone’s life, no matter how successful they are. The idea here is to focus on continuous improvements in your life, every day, no matter how small the step you take to be a better you than you were yesterday.",
+		image: "moving.jpg"	
+	},
+	{
+		id: 6,
+		name: "Never Stop",
+		description: "There is an area for improvement in everyone’s life, no matter how successful they are. The idea here is to focus on continuous improvements in your life, every day, no matter how small the step you take to be a better you than you were yesterday.",
+		newDescription: "There is an area for improvement in everyone’s life, no matter how successful they are. The idea here is to focus on continuous improvements in your life, every day, no matter how small the step you take to be a better you than you were yesterday.",
+		image: "moving.jpg"
+	},
+	{
+		id: 7,
+		name: "Never Stop",
+		description: "There is an area for improvement in everyone’s life, no matter how successful they are. The idea here is to focus on continuous improvements in your life, every day, no matter how small the step you take to be a better you than you were yesterday.",
+		newDescription: "There is an area for improvement in everyone’s life, no matter how successful they are. The idea here is to focus on continuous improvements in your life, every day, no matter how small the step you take to be a better you than you were yesterday.",
+		image: "moving.jpg"
+	},
+	{
+		id: 8,
+		name: "Never Stop",
+		description: "There is an area for improvement in everyone’s life, no matter how successful they are. The idea here is to focus on continuous improvements in your life, every day, no matter how small the step you take to be a better you than you were yesterday.",
+		newDescription: "There is an area for improvement in everyone’s life, no matter how successful they are. The idea here is to focus on continuous improvements in your life, every day, no matter how small the step you take to be a better you than you were yesterday.",
+		image: "moving.jpg"
+	},
+	{
+		id: 9,
+		name: "Never Stop",
+		description: "There is an area for improvement in everyone’s life, no matter how successful they are. The idea here is to focus on continuous improvements in your life, every day, no matter how small the step you take to be a better you than you were yesterday.",
+		newDescription: "There is an area for improvement in everyone’s life, no matter how successful they are. The idea here is to focus on continuous improvements in your life, every day, no matter how small the step you take to be a better you than you were yesterday.",
+		image: "moving.jpg"
+	},
+	{
+		id: 10,
+		name: "Never Stop",
+		description: "There is an area for improvement in everyone’s life, no matter how successful they are. The idea here is to focus on continuous improvements in your life, every day, no matter how small the step you take to be a better you than you were yesterday.",
+		newDescription: "There is an area for improvement in everyone’s life, no matter how successful they are. The idea here is to focus on continuous improvements in your life, every day, no matter how small the step you take to be a better you than you were yesterday.",
+		image: "moving.jpg"
 	}
 	]
