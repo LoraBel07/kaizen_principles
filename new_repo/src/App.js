@@ -7,6 +7,27 @@ function App() {
   const { id, name, description, age, image } = data[person];
   // console.log(data[person]);
 
+  const previousPerson = () => {
+    setPerson((person => {
+      person--;
+      if (person < 0) {
+        return data.length - 1;
+      }
+      return person;
+    }))
+
+  }
+
+  const nextPerson = () => {
+    setPerson((person =>{
+      person++;
+      if (person > data.length - 1) {
+        person = 0;
+      }
+      return person;
+    }))
+  }
+
   return (<div>
       <div className="container">
         <img src={image} width="300px" alt="person"/>
@@ -25,8 +46,8 @@ function App() {
       </div>
 
       <div className="btn container">
-        <button>Previos</button>
-        <button>Next</button>
+        <button onClick={previousPerson}>Previous</button>
+        <button onClick={nextPerson}>Next</button>
       </div>
 
     </div>);
