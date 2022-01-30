@@ -21,9 +21,7 @@ p {
   margin-left: 5%;
   margin-right: 5%;
   text-align: center;
-  border: darkgreen 1px solid;
 }
-
 
 .btn {
   display: flex;

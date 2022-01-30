@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { data } from "./data";  
-import { dataTwo } from "./dataTwo";
 import './App.css';
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
       }
       return principle;
     }))
-
   }
 
   const nextPrinciple = () => {
@@ -28,7 +26,7 @@ function App() {
       return principle;
     }))
   }
-
+  
   return (<div>
       <div className="container">
         <h1>カイゼン</h1>
@@ -56,10 +54,15 @@ function App() {
 
       <div className="container description">
       <p>{ description }</p>
-      </div>
+      </div>   
+
       
 
     </div>);
+
+
+
+
 }
 
 export default App;
