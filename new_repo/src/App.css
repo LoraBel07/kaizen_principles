@@ -1,9 +1,20 @@
+body {
+  background-color: #cfe9f5;
+}
+
 .container {
   display: flex;
   justify-content: center;
-  background-color: #D1E8E4;
+  
   /* height: 800px; */
   /* margin-top: 200px; */
+}
+h1 {
+  font-size: 35px;
+  color: darkgreen;
+}
+p {
+  font-size: 20px;
 }
 
 .person {
@@ -16,7 +27,7 @@
 }
 
 button {
-  background-color: #C37B89;
+  background-color: #537256;
   color: #fff;
   padding: 10px;
   border: none;

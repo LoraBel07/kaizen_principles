@@ -53,7 +53,7 @@ export const data = [
 	{
 		id: 6,
 		name: "Empower All Employees to Speak Up",
-		description: "Everyone who is associated in the success of the company—from the CEO to the line workers—should be encouraged to offer suggestions and solutions for problems that can be fixed",
+		description: "Everyone who is associated in the success of the company—from the CEO to the line workers—should be encouraged to offer suggestions ",
 		newDescription: "Everyone who is associated in the success of the company—from the CEO to the line workers—should be encouraged to offer suggestions and solutions for problems that can be fixed, or improvements that can be made. While you don’t have employees dealing with your own life, you can still energize your friends and family to make suggestions if they see things that you could work on. Talk with different people about your goals and get their feedback. Encourage your family and friends to make suggestions if they see things that you could work on.",
 		image: image6
 	},

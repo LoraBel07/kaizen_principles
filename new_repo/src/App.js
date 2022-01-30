@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   const [person, setPerson] = useState(0);
-  const { id, name, description, age, image } = data[person];
+  const { id, name, description, newdescription, image } = data[person];
   // console.log(data[person]);
 
   const previousPerson = () => {
@@ -30,24 +30,31 @@ function App() {
 
   return (<div>
       <div className="container">
-        <img src={image} width="300px" alt="person"/>
+        <h1>カイゼン</h1>
+      </div>
+      {/* <div className="container">
+        <p>"Try to do something just a little bit better each day in order to make a large impact in the long run."</p>
+      </div> */}
+      <div className="container">
+        <h2>10 Basic Principles of  K A I Z E N</h2>
       </div>
 
       <div className="container">
-        <h1>{id} {name}</h1>
+        <img src={image} height="200px" alt="person"/>
       </div>
 
       <div className="container">
-        <h2>{description}</h2>
+        <h2>{id}. {name}</h2>
       </div>
 
-      <div className="container">
-        <h2>{age} years old</h2>
-      </div>
+      {/* <div className="container">
+        <p>{description}</p>
+      </div> */}
 
       <div className="btn container">
-        <button onClick={previousPerson}>Previous</button>
-        <button onClick={nextPerson}>Next</button>
+        <button onClick={previousPerson}><img src="https://img.icons8.com/ios-filled/40/ffffff/hand-left.png" alt="previous" /></button>
+        <p>{description}</p>
+        <button onClick={nextPerson}><img src="https://img.icons8.com/ios-filled/40/ffffff/hand-right.png" alt="next" /></button>
       </div>
 
     </div>);
