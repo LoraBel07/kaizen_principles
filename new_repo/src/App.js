@@ -7,7 +7,7 @@ function App() {
   const { id, name, description, image } = data[principles];
 
   const [types, setTypes] = useState(dataTwo);
-  // const { num, header, meaning, showMore } = dataTwo[types]; ????
+  
   const setShowMore = (num) => {
     const newTypes = [];
     types.forEach(types => {
@@ -52,7 +52,6 @@ function App() {
         <h1> カイゼン </h1>
       </div>
       
-      {/*  */}
       <div className="container">
         <h2>10 Basic Principles of  K A I Z E N</h2>
       </div>
@@ -108,12 +107,6 @@ function App() {
         <h4> ⭐ "Try to do something just a little bit better each day in order to make a large impact in the long run." ⭐</h4>
       </div>
     </div>);
-
-      
-
-      
-
-
 }
 
 export default App;
