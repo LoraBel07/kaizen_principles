@@ -12,7 +12,7 @@ function App() {
     const newTypes = [];
     types.forEach(types => {
       if (types.num === num) {
-        const changedTypes = { ... types, showMore: !types.showMore};
+        const changedTypes = { ...types, showMore: !types.showMore};
         newTypes.push(changedTypes);
       } else {
         newTypes.push(types);
@@ -101,10 +101,17 @@ function App() {
         <button className="btn" onClick={() => setTypes([])}>Delete all</button>
       </div>
 
-
-
       <div className="container">
         <h4> ⭐ "Try to do something just a little bit better each day in order to make a large impact in the long run." ⭐</h4>
+      </div>
+      <hr/>
+      <div className="src">        
+        <p className='source'>
+          <a href="https://greendot.co.in/10-basic-principles-kaizen/" target="_blank" rel="noreferrer">📚 Greendot</a>
+        </p>
+        <p className='source'>
+          <a href="https://reverscore.com/learn-kaizen/kaizen-education-for-team/4-types-kaizen/" target="_blank" rel="noreferrer">📚 Reverscore</a>
+        </p>
       </div>
     </div>);
 }
