@@ -2,7 +2,7 @@ body {
   background-color: #cfe9f5;
 }
 
-.container, .containerDesk {
+.container {
   display: flex;
   justify-content: center;  
 }
@@ -12,7 +12,8 @@ h1 {
   color: darkgreen;
 }
 p {
-  font-size: 20px;
+  font-size: 22px;
+  
 }
 .description {
   width: 90%;
@@ -34,7 +35,7 @@ p {
   border: none;
   color: rgb(1, 109, 109);
   background-color: rgba(240, 255, 255, 0);
-  font-size: large;
+  /* font-size: large; */
   font-style: italic;
 }
 
@@ -44,4 +45,5 @@ button {
   padding: 10px;
   border: none;
   text-transform: uppercase;
+  margin: 1%;
 }

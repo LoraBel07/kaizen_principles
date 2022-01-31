@@ -1,11 +1,31 @@
 import { useState } from 'react';
-import { data } from "./data";  
+import { data, dataTwo } from "./data";  
 import './App.css';
 
 function App() {
   const [principles, setPrinciple] = useState(0);
   const { id, name, description, image } = data[principles];
-  
+
+  const [types, setTypes] = useState(dataTwo);
+  // const { num, header, meaning, showMore } = dataTwo[types]; ????
+  const setShowMore = (num) => {
+    const newTypes = [];
+    types.forEach(types => {
+      if (types.num === num) {
+        const changedTypes = { ... types, showMore: !types.showMore};
+        newTypes.push(changedTypes);
+      } else {
+        newTypes.push(types);
+      }
+    });
+    setTypes(newTypes);
+  }
+
+  const removeType = (num) => {
+    let newTypes = types.filter(types => types.num !== num);
+    setTypes(newTypes);
+  }
+
 
   const previousPrinciple = () => {
     setPrinciple((principle => {
@@ -54,13 +74,40 @@ function App() {
 
       <div className="container description">
       <p>{ description }</p>
-      </div>   
+      </div>  
 
-      
+      <div className='container'>
+          <h2>The { types.length } Types of Kaizen.</h2>
+      </div> 
+      {types.map((element => {
+        const { num, header, meaning, showMore } = element;
+        return(
+          <div key={num}>
+            <div className="container">
+              <h3>{num}. {header}</h3>
+            </div>
+            <div className="container">
+            <p>{ showMore ? meaning.substring(0,90) + "..." : meaning }                              
+              <button className="show" onClick={() => setShowMore(num)}>{showMore ? "Show more" : "Show less"}</button>
+            </p>
+            </div>
+            <div className="container">
+              <button className="btn" onClick={() => removeType(num)}>Remove</button>
+            </div>
+
+          </div>
+        )
+      }))} 
+      <div className="container">
+        <button className="btn" onClick={() => setTypes([])}>Delete all</button>
+      </div>
+
 
     </div>);
 
+      
 
+      
 
 
 }
