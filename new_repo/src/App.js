@@ -49,12 +49,10 @@ function App() {
   
   return (<div>
       <div className="container">
-        <h1>カイゼン</h1>
+        <h1> カイゼン </h1>
       </div>
       
-      {/* <div className="container">
-        <p>"Try to do something just a little bit better each day in order to make a large impact in the long run."</p>
-      </div> */}
+      {/*  */}
       <div className="container">
         <h2>10 Basic Principles of  K A I Z E N</h2>
       </div>
@@ -79,11 +77,12 @@ function App() {
       <div className='container'>
           <h2>The { types.length } Types of Kaizen.</h2>
       </div> 
+      <div className='par container'>
       {types.map((element => {
         const { num, header, meaning, showMore } = element;
         return(
-          <div key={num}>
-            <div className="container">
+          <div className='parBox' key={num}>
+            <div className="header">
               <h3>{num}. {header}</h3>
             </div>
             <div className="container">
@@ -98,11 +97,16 @@ function App() {
           </div>
         )
       }))} 
+      </div>
       <div className="container">
         <button className="btn" onClick={() => setTypes([])}>Delete all</button>
       </div>
 
 
+
+      <div className="container">
+        <h4> ⭐ "Try to do something just a little bit better each day in order to make a large impact in the long run." ⭐</h4>
+      </div>
     </div>);
 
       

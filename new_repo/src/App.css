@@ -1,19 +1,43 @@
 body {
   background-color: #cfe9f5;
+  font-family: 'Kanit', sans-serif;
 }
 
 .container {
   display: flex;
   justify-content: center;  
 }
+.par {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; 
+  align-items: top;
+  height: 90%;
+}
+.header {
+  margin-left: 2%;
+}
+.parBox {
+  padding: 1%;
+  margin: 1%;
+  background-color: rgb(169, 223, 218);
+}
+.parBox:hover {
+  background-color: rgb(202, 240, 237);
+  box-shadow: 5px 5px 12px #1F4E5F;
+}
 
 h1 {
-  font-size: 35px;
+  font-size: 45px;
   color: darkgreen;
+  text-shadow: 8px 12px 17px #1F4E5F;
+  margin-top: -5px;
+}
+h2 {
+  font-size: 30px;
 }
 p {
-  font-size: 22px;
-  
+  font-size: 18px;  
 }
 .description {
   width: 90%;
@@ -35,7 +59,6 @@ p {
   border: none;
   color: rgb(1, 109, 109);
   background-color: rgba(240, 255, 255, 0);
-  /* font-size: large; */
   font-style: italic;
 }
 
@@ -46,4 +69,7 @@ button {
   border: none;
   text-transform: uppercase;
   margin: 1%;
+}
+button:hover {
+  box-shadow: 5px 5px 12px #1F4E5F;
 }
