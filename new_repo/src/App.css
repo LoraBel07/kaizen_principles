@@ -5,7 +5,8 @@ body {
 
 .container {
   display: flex;
-  justify-content: center;  
+  justify-content: center; 
+  margin-top: -0.5%; 
 }
 .par {
   display: flex;
@@ -31,10 +32,10 @@ h1 {
   font-size: 45px;
   color: darkgreen;
   text-shadow: 8px 12px 17px #1F4E5F;
-  margin-top: -5px;
+  /* margin-top: -5px; */
 }
 h2 {
-  font-size: 30px;
+  font-size: 28px;
 }
 p {
   font-size: 18px;  
@@ -42,7 +43,7 @@ p {
 .description {
   width: 90%;
   height: 120px;
-  margin-top: 1%;
+  /* margin-top: -1%; */
   margin-left: 5%;
   margin-right: 5%;
   text-align: center;
@@ -51,9 +52,11 @@ p {
 .btn {
   display: flex;
   justify-content: space-evenly;
+  
 }
 .pointers {
-  height: 5%;
+  margin-top: 0;
+  /* justify-content: space-between; */
 }
 .show {
   border: none;
